@@ -15,7 +15,7 @@ function Homepage() {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate("/login"); // Navigate to the login page after logging out
+      navigate("/"); // Navigate to the login page after logging out
       console.log("User logged out");
     } catch (error) {
       console.error("Error logging out:", error);

@@ -7,7 +7,7 @@ import Form from "./Pages/components/Form";
 import LoginPage from "./Pages/components/LoginPage";
 import AllStars from "./Pages/components/AllStars";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "./Pages/FirebaseConfig.jsx";
+import { auth } from "./Pages/FirebaseConfig";
 
 // ProtectedRoute component
 function ProtectedRoute({ children }) {
@@ -24,7 +24,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoginPage />}>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" index element={<LoginPage />} />
           <Route path="/allstars" index element={<AllStars />} />
           {/* Protecting the routes */}
           <Route
