@@ -7,7 +7,7 @@ import Form from "./Pages/components/Form";
 import LoginPage from "./Pages/components/LoginPage";
 import AllStars from "./Pages/components/AllStars";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "./Pages/FirebaseConfig.jsx";
+import { auth } from "./FirebaseConfig.jsx";
 
 // ProtectedRoute component
 function ProtectedRoute({ children }) {

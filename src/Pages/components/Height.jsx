@@ -6,7 +6,6 @@ import {
   set,
   onDisconnect,
 } from "firebase/database";
-import firebaseConfig from "../FirebaseConfig";
 
 function Height({ height, setHeight }) {
   const db = getDatabase();
